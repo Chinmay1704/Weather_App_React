@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   let [data, setData] = useState({})
   var [location, setlocation] = useState('')
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=`
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${ApiKey}`
 
   var searchLocation = (event) =>{
     if(event.key === 'Enter'){
